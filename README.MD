@@ -17,11 +17,11 @@ You can also add more websites by just adding one more if statement below the ot
 ```
 if request.request_url.host () == 'www.websiteyouwanttoredirect.org':
     request.request_url.setHost ('www.websiteyouwanttouseinstead.net')
-
-	try:
-		request.redirect (request.request_url)
-	except:
-		pass
+	
+    try:
+	request.redirect (request.request_url)
+    except:
+	pass
 ```
 
 I guess it works. ¯\_ (ツ)_/¯
